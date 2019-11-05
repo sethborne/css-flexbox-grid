@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Flexbox Grid</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body>
+    <main class="wrapper">
+      <h2>Responsive Grid with Flexbox</h2>
+      <div class="sp75"></div>
+      
+      <h3>Basic Grid</h3>
+      <p>The Basic grid features equally sized columns in 6 standard variations.</p>
+      <!-- All basic grids from 2 - 12 will require gutters to flex-wrap appropriately -->
+      <div class="edge">
+        <div class="fc-row fc-col">
+          <div class="fi-cell"><div class="card cont-1"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-2">
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-3">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-4">
+          <div class="fi-cell"><div class="card cont-4"></div></div>
+          <div class="fi-cell"><div class="card cont-4"></div></div>
+          <div class="fi-cell"><div class="card cont-4"></div></div>
+          <div class="fi-cell"><div class="card cont-4"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-6">
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-12 ">
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+        </div>
+      </div>
+      
+      <div class="sp50"></div>
+      <hr>
+      <div class="sp50"></div>
+      
+      <h3>Flexible Grid</h3>
+      <p>The Flexible grid features one fixed column and the second automatically fills the remainder.</p>
+      <div class="edge">
+        <div class="fc-row fc-row-gutter fc-col-1of2">
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+          <div class="fi-cell"><div class="card">auto</div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of3">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+          <div class="fi-cell"><div class="card">auto</div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of4">
+          <div class="fi-cell"><div class="card cont-4"></div></div>
+          <div class="fi-cell"><div class="card">auto</div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of6">
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+          <div class="fi-cell"><div class="card">auto</div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of12">
+          <div class="fi-cell"><div class="card cont-12"></div></div>
+          <div class="fi-cell"><div class="card">auto</div></div>
+        </div>
+      </div>
+      
+      <div class="sp50"></div>
+      <hr>
+      <div class="sp50"></div>
+      
+      <h3>Matryoshka Grids</h3>
+      <p>Nest Basic or Flexible Grids into Each other, allows for infinite combinations.</p>
+      <div class="edge">
+        <div class="fc-row fc-row-gutter fc-row-nest fc-col-1of3">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+          <div class="fi-cell">
+            <div class="card">
+                <div class="fc-row fc-row-gutter fc-row-nest fc-col-1of3">
+                  <div class="fi-cell"><div class="card cont-3"></div></div>
+                  <div class="fi-cell">
+                    <div class="card">
+                      <div class="fc-row fc-row-gutter fc-row-nest fc-col-1of3">
+                        <div class="fi-cell"><div class="card cont-3"></div></div>
+                        <div class="fi-cell">
+                          <div class="card">
+                            auto
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sp50"></div>
+      <hr>
+      <div class="sp50"></div>
+      
+      <h3>Set-Width Columns with row Alignments</h3>
+      <div class="edge">
+        <!-- <div class="fc-row fc-row-gutter fc-col-1of2 fcp-jc-s">
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of2 fcp-jc-c">
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of2 fcp-jc-e">
+          <div class="fi-cell"><div class="card cont-2"></div></div>
+        </div> -->
+        <div class="fc-row fc-row-gutter fc-col-1of3 fcp-jc-s">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of3 fcp-jc-c">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of3 fcp-jc-e">
+          <div class="fi-cell"><div class="card cont-3"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of6 fcp-jc-s">
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of6 fcp-jc-c">
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+        </div>
+        <div class="fc-row fc-row-gutter fc-col-1of6 fcp-jc-e">
+          <div class="fi-cell"><div class="card cont-6"></div></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
